@@ -77,11 +77,21 @@ def filter_valid(all_file, curr_file, save_file):
 	print len(lines)
 #	print 'number in [4, 6]: '+str(count)
 
-if __name__ == '__main__':
-	all_file = sys.argv[1]
-	curr_file = sys.argv[2]
-	save_file = sys.argv[3]
+def test():
+	solvers = [['stage1_rpn_solver60k80k.pt'],
+			    ['stage1_fast_rcnn_solver30k40k.pt'],
+				['stage2_rpn_solver60k80k.pt'],
+				['stage2_fast_rcnn_solver30k40k.pt']]
+	solvers = ['////'.join('----', s) for s in solvers]
+	print solvers
 
-	filter_valid(all_file, curr_file, save_file)
+
+if __name__ == '__main__':
+	test()
+	# all_file = sys.argv[1]
+	# curr_file = sys.argv[2]
+	# save_file = sys.argv[3]
+
+	# filter_valid(all_file, curr_file, save_file)
 
 	#valid_count(f)
