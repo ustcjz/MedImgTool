@@ -87,7 +87,8 @@ def test():
 
 
 if __name__ == '__main__':
-	test()
+	# test()
+	print 'hello world'
 	# all_file = sys.argv[1]
 	# curr_file = sys.argv[2]
 	# save_file = sys.argv[3]
